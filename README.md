@@ -1,4 +1,4 @@
-# shadox
+# Shadox
 
 Shader tools.
 
