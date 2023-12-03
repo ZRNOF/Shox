@@ -2,6 +2,20 @@
 
 Shader tools.
 
+## Usage
+
+### CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/shadox@0.0.0/src/Shadox.js"></script>
+```
+
+### NPM
+
+```bash
+npm i shadox
+```
+
 ## LICENSE
 
 ### MIT license

@@ -1,4 +1,13 @@
-const extend = `
+/**
+ * Image Extend
+ * - vec4 hold(vec2 uv, sampler2D img)
+ * - vec4 mirror(vec2 uv, sampler2D img)
+ * - vec4 one(vec2 uv, sampler2D img)
+ * - vec4 repeat(vec2 uv, sampler2D img)
+ * - vec4 zero(vec2 uv, sampler2D img)
+ * @type {string}
+ */
+export const imageExtend = `
 	// MIT License
 	// Copyright © 2023 Zaron
 	// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

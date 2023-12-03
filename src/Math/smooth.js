@@ -1,6 +1,22 @@
 // noprotect
 
-const smooth = `
+/**
+ * Smooth Functions
+ * - float smoo3(float x)
+ * - vec2 smoo3(vec2 x)
+ * - vec3 smoo3(vec3 x)
+ * - vec4 smoo3(vec4 x)
+ * - float smoo5(float x)
+ * - vec2 smoo5(vec2 x)
+ * - vec3 smoo5(vec3 x)
+ * - vec4 smoo5(vec4 x)
+ * - float smoo7(float x)
+ * - vec2 smoo7(vec2 x)
+ * - vec3 smoo7(vec3 x)
+ * - vec4 smoo7(vec4 x)
+ * @type {string}
+ */
+export const smooth = `
 	// SPDX-License-Identifier: Unlicense
 
 	// degree 3

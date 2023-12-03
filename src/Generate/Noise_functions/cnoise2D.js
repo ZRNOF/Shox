@@ -1,6 +1,11 @@
 // ref: https://github.com/stegu/webgl-noise/blob/master/src/classicnoise2D.glsl
 
-const cnoise2D = `
+/**
+ * Cnoise 2D
+ * - float cnoise(vec2 P)
+ * @type {string}
+ */
+export const cnoise2D = `
 	/*
 		GLSL textureless classic 2D noise "cnoise".
 		Author:  Stefan Gustavson (stefan.gustavson@liu.se)

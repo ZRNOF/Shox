@@ -1,6 +1,11 @@
 // ref: https://github.com/stegu/webgl-noise/blob/master/src/noise2D.glsl
 
-const snoise2D = `
+/**
+ * Snoise 2D
+ * - float snoise(vec2 v)
+ * @type {string}
+ */
+export const snoise2D = `
 	/*
 		Description : Array and textureless GLSL 2D simplex noise function.
 				 Author : Ian McEwan, Ashima Arts.

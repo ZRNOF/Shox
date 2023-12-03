@@ -1,6 +1,11 @@
 // ref: https://github.com/stegu/webgl-noise/blob/master/src/classicnoise3D.glsl
 
-const cnoise3D = `
+/**
+ * Cnoise 3D
+ * - float cnoise(vec3 P)
+ * @type {string}
+ */
+export const cnoise3D = `
 	/*
 		GLSL textureless classic 3D noise "cnoise".
 		Author:  Stefan Gustavson (stefan.gustavson@liu.se)

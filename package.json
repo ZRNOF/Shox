@@ -1,0 +1,17 @@
+{
+	"name": "shadox",
+	"version": "0.0.0",
+	"description": "Shader tools.",
+	"main": "src/Shadox.js",
+	"type": "module",
+	"types": "src/Shadox.d.ts",
+	"repository": {
+		"url": "https://github.com/ZRNOF/Shadox"
+	},
+	"scripts": {},
+	"keywords": [
+		"shader"
+	],
+	"author": "Zaron Chen",
+	"license": "MIT"
+}

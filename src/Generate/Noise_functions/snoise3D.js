@@ -1,6 +1,11 @@
 // ref: https://github.com/stegu/webgl-noise/blob/master/src/noise3D.glsl
 
-const snoise3D = `
+/**
+ * Snoise 3D
+ * - float snoise(vec3 v)
+ * @type {string}
+ */
+export const snoise3D = `
 	/*
 		Description : Array and textureless GLSL 3D simplex 
 		              noise functions.

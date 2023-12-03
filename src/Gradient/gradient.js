@@ -1,6 +1,15 @@
 // noprotect
 
-const gradient = `
+/**
+ * Gradient
+ * - vec2 conical(vec2 uv, vec2 pos, float tile, float ofst)
+ * - float horizontal(vec2 uv, float tile, float ofst)
+ * - float radial(vec2 uv, vec2 pos, float tile, float ofst)
+ * - vec2 swirl(vec2 uv, vec2 pos, float tile, float ofst, float wei)
+ * - float vertical(vec2 uv, float tile, float ofst)
+ * @type {string}
+ */
+export const gradient = `
 	// MIT License
 	// Copyright © 2023 Zaron
 	// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

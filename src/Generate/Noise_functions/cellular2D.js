@@ -1,6 +1,11 @@
 // ref: https://github.com/stegu/webgl-noise/blob/master/src/cellular2D.glsl
 
-const cellular2D = `
+/**
+ * Cellular 2D
+ * - vec2 cellular(vec2 P)
+ * @type {string}
+ */
+export const cellular2D = `
 	/*
 		Cellular noise ("Worley noise") in 2D in GLSL.
 		Copyright (c) Stefan Gustavson 2011-04-19. All rights reserved.

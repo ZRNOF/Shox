@@ -1,6 +1,11 @@
 // ref: https://github.com/stegu/webgl-noise/blob/master/src/noise4D.glsl
 
-const snoise4D = `
+/**
+ * Snoise 4D
+ * - float snoise(vec4 v)
+ * @type {string}
+ */
+export const snoise4D = `
 	/*
 		Description : Array and textureless GLSL 4D simplex 
 		              noise functions.

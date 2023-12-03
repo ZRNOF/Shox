@@ -1,6 +1,11 @@
 // ref: https://github.com/stegu/webgl-noise/blob/master/src/cellular3D.glsl
 
-const cellular3D = `
+/**
+ * Cellular 3D
+ * - vec2 cellular(vec3 P)
+ * @type {string}
+ */
+export const cellular3D = `
 	/*
 		Cellular noise ("Worley noise") in 3D in GLSL.
 		Copyright (c) Stefan Gustavson 2011-04-19. All rights reserved.
