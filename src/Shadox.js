@@ -29,3 +29,7 @@ export { imageExtend } from "./Image Processing/Extend/imageExtend.js"
 // Math
 export { mapFunc } from "./Math/mapFunc.js"
 export { smooth } from "./Math/smooth.js"
+
+// Palette
+export { zcPalette } from "./Palette/palette.js"
+export { iqPalette } from "./Palette/palette.js"

@@ -1,13 +1,35 @@
 # Shadox
 
+[![NPM Package][npm]][npm-url]
+
 Shader tools.
 
 ## Usage
 
 ### CDN
 
-```html
-<script src="https://cdn.jsdelivr.net/npm/shadox@0.0.0/src/Shadox.js"></script>
+```js
+import * as Shadox from "https://cdn.jsdelivr.net/npm/shadox@0.1.0/src/Shadox.js"
+
+const frag = `#version 300 es
+  precision mediump float;
+
+  uniform vec2 iResolution;
+  // ...
+
+  ${Shadox.displace}
+  ${Shadox.snoise3D}
+  ${Shadox.snoise3DImage}
+  ${Shadox.gradient}
+  ${Shadox.zcPalette(5)}
+  ${Shadox.iqPalette}
+  ${Shadox.extend}
+  ${Shadox.smooth}
+
+  void main() {
+    // ...
+  }
+`
 ```
 
 ### NPM
@@ -35,3 +57,6 @@ npm i shadox
 - [LICENSE - ashima/webgl-noise](https://github.com/ashima/webgl-noise/blob/master/LICENSE)
 - [LICENSE - stegu/webgl-noise](https://github.com/stegu/webgl-noise/blob/master/LICENSE)
 - [LICENSE - stegu/psrdnoise](https://github.com/stegu/psrdnoise#license)
+
+[npm]: https://img.shields.io/npm/v/shadox
+[npm-url]: https://www.npmjs.com/package/shadox
