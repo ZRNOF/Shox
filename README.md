@@ -45,7 +45,7 @@ npm i shadox
 - Code in this repository are under [the MIT license](https://github.com/ZRNOF/Shadox/blob/main/LICENSE) as long as I am the author of the code.
 - Code by other authors will be attributed to the original author with source and license.
 
-### Code in [Shader/Noise_function](https://github.com/ZRNOF/Shadox/tree/main/src/Generate/Noise_functions/):
+### Code in [Generate/Noise_functions](https://github.com/ZRNOF/Shadox/tree/main/src/Generate/Noise_functions/):
 
 - Cellular ("Worley") noise functions are (C) Stefan Gustavson
 - Classic noise functions are (C) Stefan Gustavson
