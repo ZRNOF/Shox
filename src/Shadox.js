@@ -25,6 +25,7 @@ export { gradient } from "./Gradient/gradient.js"
 
 // Image Processing
 export { imageExtend } from "./Image Processing/Extend/imageExtend.js"
+export { unsharp } from "./Image Processing/Unsharp/unsharp.js"
 
 // Math
 export { mapFunc } from "./Math/mapFunc.js"

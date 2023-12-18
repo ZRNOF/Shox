@@ -18,6 +18,7 @@ export { snoise4DImage } from "./Generate/Noise_image_functions/snoise4DImage.js
 export { random2D } from "./Generate/Random/random2D.js"
 export { gradient } from "./Gradient/gradient.js"
 export { imageExtend } from "./Image Processing/Extend/imageExtend.js"
+export { unsharp } from "./Image Processing/Unsharp/unsharp.js"
 export { mapFunc } from "./Math/mapFunc.js"
 export { smooth } from "./Math/smooth.js"
 export { zcPalette } from "./Palette/palette.js"
