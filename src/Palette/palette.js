@@ -1,6 +1,6 @@
 /**
  * Palette by Zaron Chen
- * - vec4 zcPalette(float t, vec4 colors[numColors], float positions[numColors])
+ * - vec4 palette(float t, vec4 colors[numColors], float positions[numColors])
  * - vec4 colors[] - define your colors
  * - float positions[] - define positions of your colors (0.0 - 1.0)
  * @param {number} numColors - The number of colors to include in the palette. This determines the length of the 'colors' and 'positions' arrays.
