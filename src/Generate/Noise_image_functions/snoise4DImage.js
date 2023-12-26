@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Snoise 4D Image
  * - vec4 snoise4DImage(vec2 uv, float scal, float gain, float ofst, vec4 move)

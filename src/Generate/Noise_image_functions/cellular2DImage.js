@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Cellular 2D Image
  * - vec4 cellular2DImage(vec2 uv, float scal, float gain, float ofst, vec2 move)

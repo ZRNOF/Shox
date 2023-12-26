@@ -14,6 +14,7 @@ export { cellular2DImage } from "./Generate/Noise_image_functions/cellular2DImag
 export { cellular3DImage } from "./Generate/Noise_image_functions/cellular3DImage.js"
 export { cnoise2DImage } from "./Generate/Noise_image_functions/cnoise2DImage.js"
 export { cnoise3DImage } from "./Generate/Noise_image_functions/cnoise3DImage.js"
+export { cnoise4DImage } from "./Generate/Noise_image_functions/cnoise4DImage.js"
 export { snoise2DImage } from "./Generate/Noise_image_functions/snoise2DImage.js"
 export { snoise3DImage } from "./Generate/Noise_image_functions/snoise3DImage.js"
 export { snoise4DImage } from "./Generate/Noise_image_functions/snoise4DImage.js"
