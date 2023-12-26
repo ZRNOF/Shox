@@ -7,8 +7,7 @@
  */
 export const snoise3D = `
 	/*
-		Description : Array and textureless GLSL 3D simplex 
-		              noise functions.
+		Description : Array and textureless GLSL 3D simplex noise functions.
 		     Author : Ian McEwan, Ashima Arts.
 		 Maintainer : stegu
 		    Lastmod : 20201014 (stegu)
@@ -16,16 +15,11 @@ export const snoise3D = `
 		              Distributed under the MIT License. See LICENSE file.
 		              https://github.com/ashima/webgl-noise
 		              https://github.com/stegu/webgl-noise
-		
+
 		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	*/
-
-	vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
-	vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
-	vec4 permute(vec4 x) { return mod289(((x*34.0)+10.0)*x); }
-	vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }
 
 	float snoise(vec3 v) { 
 		const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
@@ -45,9 +39,9 @@ export const snoise3D = `
 
 		i = mod289(i);
 		vec4 p = permute( permute( permute( 
-							 i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
-						 + i.y + vec4(0.0, i1.y, i2.y, 1.0 )) 
-						 + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
+		           i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
+		         + i.y + vec4(0.0, i1.y, i2.y, 1.0 )) 
+		         + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
 
 		float n_ = 0.142857142857;
 		vec3  ns = n_ * D.wyz - D.xzx;
@@ -85,6 +79,6 @@ export const snoise3D = `
 		vec4 m = max(0.5 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
 		m = m * m;
 		return 105.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1), 
-																	dot(p2,x2), dot(p3,x3) ) );
+		                               dot(p2,x2), dot(p3,x3) ) );
 	}
 `

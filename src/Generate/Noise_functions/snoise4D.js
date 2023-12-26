@@ -7,8 +7,7 @@
  */
 export const snoise4D = `
 	/*
-		Description : Array and textureless GLSL 4D simplex 
-		              noise functions.
+		Description : Array and textureless GLSL 4D simplex noise functions.
 		     Author : Ian McEwan, Ashima Arts.
 		 Maintainer : stegu
 		    Lastmod : 20110822 (ijm)
@@ -21,13 +20,6 @@ export const snoise4D = `
 		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.	
 	*/
-
-	vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
-	float mod289(float x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
-	vec4 permute(vec4 x) { return mod289(((x*34.0)+10.0)*x); }
-	float permute(float x) { return mod289(((x*34.0)+10.0)*x); }
-	vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }
-	float taylorInvSqrt(float r) { return 1.79284291400159 - 0.85373472095314 * r; }
 
 	vec4 grad4(float j, vec4 ip) {
 		const vec4 ones = vec4(1.0, 1.0, 1.0, -1.0);
@@ -44,10 +36,10 @@ export const snoise4D = `
 	#define F4 0.309016994374947451
 
 	float snoise(vec4 v) {
-		const vec4  C = vec4( 0.138196601125011,  // (5 - sqrt(5))/20  G4
-													0.276393202250021,  // 2 * G4
-													0.414589803375032,  // 3 * G4
-												-0.447213595499958);  // -1 + 4 * G4
+		const vec4  C = vec4( 0.138196601125011,
+		                      0.276393202250021,
+		                      0.414589803375032,
+		                     -0.447213595499958);
 
 		vec4 i  = floor(v + dot(v, vec4(F4)) );
 		vec4 x0 = v -   i + dot(i, C.xxxx);
@@ -76,10 +68,10 @@ export const snoise4D = `
 		i = mod289(i);
 		float j0 = permute( permute( permute( permute(i.w) + i.z) + i.y) + i.x);
 		vec4 j1 = permute( permute( permute( permute (
-							i.w + vec4(i1.w, i2.w, i3.w, 1.0 ))
-						+ i.z + vec4(i1.z, i2.z, i3.z, 1.0 ))
-						+ i.y + vec4(i1.y, i2.y, i3.y, 1.0 ))
-						+ i.x + vec4(i1.x, i2.x, i3.x, 1.0 ));
+		          i.w + vec4(i1.w, i2.w, i3.w, 1.0 ))
+		        + i.z + vec4(i1.z, i2.z, i3.z, 1.0 ))
+		        + i.y + vec4(i1.y, i2.y, i3.y, 1.0 ))
+		        + i.x + vec4(i1.x, i2.x, i3.x, 1.0 ));
 
 		vec4 ip = vec4(1.0/294.0, 1.0/49.0, 1.0/7.0, 0.0) ;
 
@@ -101,6 +93,6 @@ export const snoise4D = `
 		m0 = m0 * m0;
 		m1 = m1 * m1;
 		return 49.0 * ( dot(m0*m0, vec3( dot( p0, x0 ), dot( p1, x1 ), dot( p2, x2 )))
-								+ dot(m1*m1, vec2( dot( p3, x3 ), dot( p4, x4 ) ) ) ) ;
+		              + dot(m1*m1, vec2( dot( p3, x3 ), dot( p4, x4 ) ) ) ) ;
 	}
 `

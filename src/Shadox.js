@@ -4,10 +4,12 @@ export { extend } from "./Coordinate/Extend/extend.js"
 export { pixelate } from "./Coordinate/Pixelate/pixelate.js"
 
 // Generate
+export { noiseMath } from "./Generate/Noise_functions/noiseMath.js"
 export { cellular2D } from "./Generate/Noise_functions/cellular2D.js"
 export { cellular3D } from "./Generate/Noise_functions/cellular3D.js"
 export { cnoise2D } from "./Generate/Noise_functions/cnoise2D.js"
 export { cnoise3D } from "./Generate/Noise_functions/cnoise3D.js"
+export { cnoise4D } from "./Generate/Noise_functions/cnoise4D.js"
 export { snoise2D } from "./Generate/Noise_functions/snoise2D.js"
 export { snoise3D } from "./Generate/Noise_functions/snoise3D.js"
 export { snoise4D } from "./Generate/Noise_functions/snoise4D.js"

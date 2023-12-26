@@ -7,29 +7,25 @@
  */
 export const snoise2D = `
 	/*
-		Description : Array and textureless GLSL 2D simplex noise function.
-				 Author : Ian McEwan, Ashima Arts.
+		Description : Array and textureless GLSL 2D simplex noise functions.
+		     Author : Ian McEwan, Ashima Arts.
 		 Maintainer : stegu
-			  Lastmod : 20110822 (ijm)
-			  License : Copyright (C) 2011 Ashima Arts. All rights reserved.
-								  Distributed under the MIT License. See LICENSE file.
-								  https://github.com/ashima/webgl-noise
-								  https://github.com/stegu/webgl-noise
+		    Lastmod : 20110822 (ijm)
+		    License : Copyright (C) 2011 Ashima Arts. All rights reserved.
+		              Distributed under the MIT License. See LICENSE file.
+		              https://github.com/ashima/webgl-noise
+		              https://github.com/stegu/webgl-noise
 
 		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	*/
 
-	vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
-	vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
-	vec3 permute(vec3 x) { return mod289(((x*34.0)+10.0)*x); }
-
 	float snoise(vec2 v) {
 		const vec4 C = vec4(0.211324865405187,
-												0.366025403784439,
-											 -0.577350269189626,
-												0.024390243902439);
+		                    0.366025403784439,
+		                   -0.577350269189626,
+		                    0.024390243902439);
 
 		vec2 i  = floor(v + dot(v, C.yy) );
 		vec2 x0 = v -   i + dot(i, C.xx);
