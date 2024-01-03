@@ -1,5 +1,6 @@
 export { displace } from "./Coordinate/Displace/displace.js"
 export { extend } from "./Coordinate/Extend/extend.js"
+export { flip } from "./Coordinate/Flip/flip.js"
 export { pixelate } from "./Coordinate/Pixelate/pixelate.js"
 export { noiseMath } from "./Generate/Noise_functions/noiseMath.js"
 export { cellular2D } from "./Generate/Noise_functions/cellular2D.js"

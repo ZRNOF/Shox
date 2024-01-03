@@ -1,6 +1,7 @@
 // Coordinate
 export { displace } from "./Coordinate/Displace/displace.js"
 export { extend } from "./Coordinate/Extend/extend.js"
+export { flip } from "./Coordinate/Flip/flip.js"
 export { pixelate } from "./Coordinate/Pixelate/pixelate.js"
 
 // Generate
