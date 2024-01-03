@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Gradient
  * - vec2 conical(vec2 uv, vec2 pos, float tile, float ofst)

@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Map Functions
  * - float map(float value, float iMin, float iMax, float oMin, float oMax)

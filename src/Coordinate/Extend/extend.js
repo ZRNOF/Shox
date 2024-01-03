@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Extend
  * - vec2 mirror(vec2 uv, float num)

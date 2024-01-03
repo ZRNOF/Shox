@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Displace
  * - vec2 displace(vec2 uv, vec2 duv, float off, float wei)

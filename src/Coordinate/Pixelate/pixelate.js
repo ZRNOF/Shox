@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Pixelate
  * - vec2 pixelate(vec2 uv, vec2 grid)

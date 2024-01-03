@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Smooth Functions
  * - float smoo3(float x)

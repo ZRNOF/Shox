@@ -1,5 +1,3 @@
-// noprotect
-
 /**
  * Random 2D
  * - float random(vec2 uv)
