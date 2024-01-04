@@ -1,6 +1,6 @@
 {
 	"name": "shadox",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Shader tools.",
 	"main": "src/Shadox.js",
 	"type": "module",
