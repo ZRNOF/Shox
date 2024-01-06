@@ -9,7 +9,7 @@ Shader tools.
 ### CDN
 
 ```js
-import * as Shadox from "https://cdn.jsdelivr.net/npm/shadox@0.2.0/src/Shadox.js"
+import * as Shadox from "https://cdn.jsdelivr.net/npm/shadox@0.4.0/src/Shadox.js"
 
 const frag = `#version 300 es
   precision mediump float;
@@ -21,14 +21,18 @@ const frag = `#version 300 es
   ${Shadox.snoise3D}
   ${Shadox.snoise3DImage}
   ${Shadox.displace}
+  ${Shadox.extend}
+  ${Shadox.flip}
+  ${Shadox.pixelate}
+  ${Shadox.hash}
+  ${Shadox.voronoi}
   ${Shadox.gradient}
   ${Shadox.zcPalette(5)}
   ${Shadox.iqPalette}
-  ${Shadox.extend}
   ${Shadox.unsharp}
   ${Shadox.blur(30)}
-  ${Shadox.smooth}
   ${Shadox.mapFunc}
+  ${Shadox.smooth}
 
   void main() {
     // ...
