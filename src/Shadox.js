@@ -5,6 +5,7 @@ export { flip } from "./Coordinate/Flip/flip.js"
 export { pixelate } from "./Coordinate/Pixelate/pixelate.js"
 
 // Generate
+export { hash } from "./Generate/Hash/hash.js"
 export { noiseMath } from "./Generate/Noise_functions/noiseMath.js"
 export { cellular2D } from "./Generate/Noise_functions/cellular2D.js"
 export { cellular3D } from "./Generate/Noise_functions/cellular3D.js"
