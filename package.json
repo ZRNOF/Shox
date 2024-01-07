@@ -1,16 +1,17 @@
 {
-	"name": "shadox",
-	"version": "0.4.0",
+	"name": "shox",
+	"version": "0.0.0",
 	"description": "Shader tools.",
-	"main": "src/Shadox.js",
+	"main": "src/Shox.js",
 	"type": "module",
-	"types": "src/Shadox.d.ts",
+	"types": "src/Shox.d.ts",
 	"repository": {
-		"url": "https://github.com/ZRNOF/Shadox"
+		"url": "https://github.com/ZRNOF/Shox"
 	},
 	"scripts": {},
 	"keywords": [
-		"shader"
+		"shader",
+		"frag"
 	],
 	"author": "Zaron Chen",
 	"license": "MIT"
