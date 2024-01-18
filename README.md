@@ -9,7 +9,7 @@ Shader tools.
 ### CDN
 
 ```js
-import * as Shox from "https://cdn.jsdelivr.net/npm/shox@1.0.0/src/Shox.js"
+import * as Shox from "https://cdn.jsdelivr.net/npm/shox@1.1.0/src/Shox.js"
 
 const frag = `#version 300 es
   precision mediump float;
@@ -33,6 +33,7 @@ const frag = `#version 300 es
   ${Shox.blur(30)}
   ${Shox.mapFunc}
   ${Shox.smooth}
+  ${Shox.dither}
 
   void main() {
     // ...
