@@ -30,6 +30,7 @@ export { gradient } from "./Gradient/gradient.js"
 
 // Image Processing
 export { blur } from "./Image Processing/Blur/blur.js"
+export { dither } from "./Image Processing/Dither/dither.js"
 export { imageExtend } from "./Image Processing/Extend/imageExtend.js"
 export { unsharp } from "./Image Processing/Unsharp/unsharp.js"
 
