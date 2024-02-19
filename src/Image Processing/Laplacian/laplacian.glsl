@@ -54,3 +54,31 @@ vec2 laplacian9Wrap(vec2 uv, sampler2D tex, vec2 texelSize) {
 	sum += 1.*texture(tex, fract(uv+vec2(1., 1.)*texelSize)).xy;
 	return sum;
 }
+
+vec2 laplacianS(vec2 uv, sampler2D tex, vec2 texelSize) {
+	vec2 sum = vec2(0.);
+	sum += .25*texture(tex, uv+vec2(-1.,-1.)*texelSize).xy;
+	sum += .5*texture(tex, uv+vec2(-1., 0.)*texelSize).xy;
+	sum += .25*texture(tex, uv+vec2(-1., 1.)*texelSize).xy;
+	sum += .5*texture(tex, uv+vec2(0.,-1.)*texelSize).xy;
+	sum += -3.*texture(tex, uv+vec2(0., 0.)*texelSize).xy;
+	sum += .5*texture(tex, uv+vec2(0., 1.)*texelSize).xy;
+	sum += .25*texture(tex, uv+vec2(1.,-1.)*texelSize).xy;
+	sum += .5*texture(tex, uv+vec2(1., 0.)*texelSize).xy;
+	sum += .25*texture(tex, uv+vec2(1., 1.)*texelSize).xy;
+	return sum;
+}
+
+vec2 laplacianSWrap(vec2 uv, sampler2D tex, vec2 texelSize) {
+	vec2 sum = vec2(0.);
+	sum += .25*texture(tex, fract(uv+vec2(-1.,-1.)*texelSize)).xy;
+	sum += .5*texture(tex, fract(uv+vec2(-1., 0.)*texelSize)).xy;
+	sum += .25*texture(tex, fract(uv+vec2(-1., 1.)*texelSize)).xy;
+	sum += .5*texture(tex, fract(uv+vec2(0.,-1.)*texelSize)).xy;
+	sum += -3.*texture(tex, fract(uv+vec2(0., 0.)*texelSize)).xy;
+	sum += .5*texture(tex, fract(uv+vec2(0., 1.)*texelSize)).xy;
+	sum += .25*texture(tex, fract(uv+vec2(1.,-1.)*texelSize)).xy;
+	sum += .5*texture(tex, fract(uv+vec2(1., 0.)*texelSize)).xy;
+	sum += .25*texture(tex, fract(uv+vec2(1., 1.)*texelSize)).xy;
+	return sum;
+}
