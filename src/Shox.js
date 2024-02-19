@@ -32,6 +32,7 @@ export { gradient } from "./Gradient/gradient.js"
 export { blur } from "./Image Processing/Blur/blur.js"
 export { dither } from "./Image Processing/Dither/dither.js"
 export { imageExtend } from "./Image Processing/Extend/imageExtend.js"
+export { laplacian } from "./Image Processing/Laplacian/laplacian.js"
 export { unsharp } from "./Image Processing/Unsharp/unsharp.js"
 
 // Math
