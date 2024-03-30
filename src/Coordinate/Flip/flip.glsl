@@ -9,3 +9,8 @@ vec2 flipX(vec2 uv) {
 vec2 flipY(vec2 uv) {
 	return vec2(uv.x, 1.0-uv.y);
 }
+
+// flips in both horizontal and vertical directions
+vec2 flip(vec2 uv) {
+	return 1.0-uv;
+}
