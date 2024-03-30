@@ -3,6 +3,7 @@ export { displace } from "./Coordinate/Displace/displace.js"
 export { extend } from "./Coordinate/Extend/extend.js"
 export { flip } from "./Coordinate/Flip/flip.js"
 export { pixelate } from "./Coordinate/Pixelate/pixelate.js"
+export { rotate } from "./Coordinate/Rotate/rotate.js"
 
 // Generate
 export { hash } from "./Generate/Hash/hash.js"
